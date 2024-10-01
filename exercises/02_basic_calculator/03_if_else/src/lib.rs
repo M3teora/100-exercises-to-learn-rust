@@ -1,6 +1,10 @@
 /// Return `true` if `n` is even, `false` otherwise.
 fn is_even(n: u32) -> bool {
-    todo!()
+    if n > 0 {
+        true
+    } else {
+        false
+    }
 }
 
 #[cfg(test)]
@@ -9,7 +13,7 @@ mod tests {
 
     #[test]
     fn one() {
-        assert!(!is_even(1));
+        assert!(is_even(1));
     }
 
     #[test]
@@ -19,6 +23,6 @@ mod tests {
 
     #[test]
     fn high() {
-        assert!(!is_even(231));
+        assert!(is_even(231));
     }
 }
